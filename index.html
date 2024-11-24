@@ -207,6 +207,58 @@
             </section>
             <!-- .expertise-wrapper Close-->
 
+            <!-- Professional Experience Start -->
+            <section class="section-wrapper section-education">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="section-title"><h2>Professional Experience</h2></div>
+                  </div>
+                </div>
+                <!--.row-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <!-- Experience item -->
+                    <div class="content-item">
+                      <small>07/2024 - Present</small>
+                      <h3>
+                        Assistant Programmer
+                      </h3>
+                      <h4>Bangladesh University of Business & Technology - BUBT</h4>
+
+                      <div style="margin-left: 25px;">                      
+                        <ul style="list-style-type:disc">
+                          <li>Develop new software for university operations.</li>
+                          <li>Collaborate with departments to ensure software meets requirements.</li>
+                          <li>Provide technical support and system improvements.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Experience item -->
+                    <div class="content-item">
+                      <small>03/2024 - 05/2024</small>
+                      <h3>
+                        Software Developer (Contract)
+                      </h3>
+                      <h4>Bangladesh University of Business & Technology - BUBT</h4>
+
+                      <div style="margin-left: 25px;">                      
+                        <ul style="list-style-type:disc">
+                          <li>Developed a software for classroom booking and logging.</li>
+                          <li>Worked closely with the IT Unit to meet project specifications and deadlines.</li>
+                          <li>Ensured the software was user-friendly and met the needs of university staff and students.</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!--.row-->
+              </div>
+              <!-- .container-fluid -->
+            </section>
+            <!-- Professional Experience Close-->
+
             <!-- Project Section Start -->
             <section class="section-wrapper section-experience gray-bg">
               <div class="container-fluid">
@@ -639,5 +691,19 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/theia-sticky-sidebar.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+      // Debounce function example
+      function debounce(func, wait) {
+          let timeout;
+          return function(...args) {
+              clearTimeout(timeout);
+              timeout = setTimeout(() => func.apply(this, args), wait);
+          };
+      }
+
+      $(window).on('scroll', debounce(() => {
+          console.log('Scroll event triggered');
+      }, 50));
+    </script>
   </body>
 </html>

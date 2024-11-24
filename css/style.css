@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Hind", sans-serif;
   font-size: 15px;
@@ -175,6 +178,7 @@ button:focus,
   flex: 2 0 0;
   position: relative;
   background: #ffffff;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 768px) {
@@ -194,6 +198,7 @@ button:focus,
     width: 100%;
     position: relative;
     box-shadow: none;
+    scroll-behavior: smooth;
   }
 }
 
