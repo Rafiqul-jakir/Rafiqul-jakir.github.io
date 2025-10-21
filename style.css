@@ -129,8 +129,8 @@ a:hover {
 }
 
 .profile-photo img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-medium);
@@ -569,7 +569,7 @@ a:hover {
 .footer {
   background: var(--primary-color);
   color: white;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .footer p {
