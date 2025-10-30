@@ -28,6 +28,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -115,6 +119,13 @@
           transform: translate(0, -50%);
           opacity: 1;
         }
+      }
+      .certificates-section img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .certificates-section img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
       }
     </style>
   </head>
@@ -603,222 +614,218 @@
       </section>
 
       <!-- Certificates Slider -->
-      <section class="section certificates-section">
+      <section class="section certificates-section py-5">
         <div class="container">
-          <h3 class="section-title">Certificates</h3>
-          <div class="section-content">
-            <div class="swiper certificates-swiper">
-              <div class="swiper-wrapper">
-                <!-- Web Development with PHP & Laravel -->
-                <div class="swiper-slide">
-                  <div class="certificate-card">
-                    <div class="certificate-icon">
-                      <i class="fab fa-laravel"></i>
-                    </div>
-                    <h4 class="certificate-title">
-                      <a
-                        href="https://ostad.app/share/certificate/c29098-rafiqul-islam"
-                        target="_blank"
-                        >Web Development with PHP & Laravel</a
-                      >
-                    </h4>
-                    <p class="certificate-description">
-                      I have successfully completed the "Web Development with
-                      PHP & Laravel" course from Ostad, an online learning
-                      platform. This course provided me with practical knowledge
-                      of PHP and the Laravel framework, covering key concepts
-                      such as MVC architecture, routing, database management
-                      with Eloquent ORM, authentication, and building dynamic
-                      web applications from scratch.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Volunteering Experience -->
-                <div class="swiper-slide">
-                  <div class="certificate-card">
-                    <div class="certificate-icon">
-                      <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <h4 class="certificate-title">
-                      <a href="img/certificates/ICPC.jpeg" target="_blank"
-                        >Certificate of Achievement – ICPC Asia Dhaka Regional
-                        Contest 2023 (Volunteer)</a
-                      >
-                    </h4>
-                    <p class="certificate-description">
-                      Served as a Volunteer at the ICPC Asia Dhaka Regional
-                      Contest 2023, organized by Bangladesh University of
-                      Business and Technology (BUBT) in collaboration with
-                      Bangladesh Computer Council (BCC) and the ICT Division.
-                      Assisted in event coordination, contestant management, and
-                      technical support to ensure the smooth execution of one of
-                      the largest programming competitions in Asia.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Agile Project Management Foundation -->
-                <div class="swiper-slide">
-                  <div class="certificate-card">
-                    <div class="certificate-icon">
-                      <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h4 class="certificate-title">
-                      <a
-                        href="https://www.life-global.org/certificate/656bfc85-9a30-4b78-a054-096a1bb5441b"
-                        target="_blank"
-                        >Agile Project Management Foundation</a
-                      >
-                    </h4>
-                    <p class="certificate-description">
-                      Learn how agile project management methodologies such as
-                      Scrum and Kanban are revolutionizing our approach to
-                      managing business development and customer satisfaction.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- WordPress for Absolute Beginners -->
-                <div class="swiper-slide">
-                  <div class="certificate-card">
-                    <div class="certificate-icon">
-                      <i class="fab fa-wordpress"></i>
-                    </div>
-                    <h4 class="certificate-title">
-                      <a
-                        href="https://www.udemy.com/certificate/UC-b4f65fc1-e332-464b-b97b-ffab598c354c/"
-                        target="_blank"
-                        >WordPress for Absolute Beginners</a
-                      >
-                    </h4>
-                    <p class="certificate-description">
-                      Installing and Customizing WordPress Themes, Working with
-                      Posts and Pages, Writing and Optimizing blog posts and
-                      more
-                    </p>
-                  </div>
-                </div>
-
-                <!--HackerRank Problem Solving (Basic)  -->
-                <div class="swiper-slide">
-                  <div class="certificate-card">
-                    <div class="certificate-icon">
-                      <i class="fas fa-code"></i>
-                    </div>
-                    <h4 class="certificate-title">
-                      <a
-                        href="https://www.hackerrank.com/certificates/cf9f979ecd28"
-                        target="_blank"
-                      >
-                        HackerRank Problem Solving (Basic)</a
-                      >
-                    </h4>
-                    <p class="certificate-description">
-                      It covers basic topics of Data Structures (such as Arrays,
-                      Strings) and Algorithms (such as Sorting and Searching).
-                    </p>
-                  </div>
-                </div>
-
-                <!--Internet and Web Development Fundamentals  -->
-                <div class="swiper-slide">
-                  <div class="certificate-card">
-                    <div class="certificate-icon">
-                      <i class="fas fa-globe"></i>
-                    </div>
-                    <h4 class="certificate-title">
-                      <a
-                        href="https://www.udemy.com/certificate/UC-49ddc24b-03f0-4bd2-a1b5-c0ee9c6ff877/"
-                        target="_blank"
-                        >Internet and Web Development Fundamentals</a
-                      >
-                    </h4>
-                    <p class="certificate-description">
-                      The course covers essential concepts and skills related to
-                      the internet, web technologies, and the foundational
-                      elements of web development.
-                    </p>
-                  </div>
-                </div>
-
-                <!--  HackerRank CSS Skills Verification -->
-                <div class="swiper-slide">
-                  <div class="certificate-card">
-                    <div class="certificate-icon">
-                      <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h4 class="certificate-title">
-                      <a
-                        href="https://www.hackerrank.com/certificates/5ab788d23c44"
-                        target="_blank"
-                        >HackerRank CSS Skills Verification</a
-                      >
-                    </h4>
-                    <p class="certificate-description">
-                      It covers topics like exploring Cascading and Inheritance,
-                      exploring text styling fundamentals, understanding the use
-                      of layouts in CSS, understand the boxing of elements in
-                      CSS, among others.
-                    </p>
-                  </div>
-                </div>
-
-                <!--  Certificate of Participation - AWS Cloud Day 2023 -->
-                <div class="swiper-slide">
-                  <div class="certificate-card">
-                    <div class="certificate-icon">
-                      <i class="fab fa-aws"></i>
-                    </div>
-                    <h4 class="certificate-title">
-                      <a
-                        href="img/certificates/AWS Cloud Day 2023.jpg"
-                        target="_blank"
-                        >Certificate of Participation - AWS Cloud Day 2023</a
-                      >
-                    </h4>
-                    <p class="certificate-description">
-                      I participated in AWS Cloud Day 2023, gaining insights
-                      into cloud computing, AWS services, and best practices for
-                      deploying scalable and secure applications. The event
-                      featured expert-led sessions, hands-on demonstrations, and
-                      networking opportunities with cloud professionals.
-                    </p>
-                  </div>
-                </div>
-
-                <!--  Certificate of Participation - Initiative to Make Networking and ICT More Attractive to Students -->
-                <div class="swiper-slide">
-                  <div class="certificate-card">
-                    <div class="certificate-icon">
-                      <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h4 class="certificate-title">
-                      <a
-                        href="img/certificates/Initiative to Make Networking and ICT More Attractive to Students.jpg"
-                        target="_blank"
-                        >Certificate of Participation - Initiative to Make
-                        Networking and ICT More Attractive to Students</a
-                      >
-                    </h4>
-                    <p class="certificate-description">
-                      I participated in AWS Cloud Day 2023, gaining insights
-                      into cloud computing, AWS services, and best practices for
-                      deploying scalable and secure applications. The event
-                      featured expert-led sessions, hands-on demonstrations, and
-                      networking opportunities with cloud professionals.
-                    </p>
-                  </div>
-                </div>
+          <h3 class="section-title mb-4">Certificates</h3>
+          <div class="row g-4">
+            <!-- Web Development with PHP & Laravel -->
+            <div class="col-6 col-md-4 col-lg-4">
+              <a
+                href="img/certificates/laravel.png"
+                data-fancybox="certificates"
+                data-caption="Web Development with PHP & Laravel"
+              >
+                <img
+                  src="img/certificates/laravel.png"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Web Development with PHP & Laravel"
+                />
+              </a>
+              <div class="text-center mt-2">
+                <h6 class="fw-semibold mb-1">
+                  Web Development with PHP & Laravel
+                </h6>
+                <a
+                  href="https://ostad.app/share/certificate/c29098-rafiqul-islam"
+                  target="_blank"
+                  class="text-primary small"
+                  >Verify Certificate</a
+                >
               </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+            </div>
+            <!-- ICPC Volunteer -->
+            <div class="col-6 col-md-4 col-lg-4">
+              <a
+                href="img/certificates/ICPC.jpeg"
+                data-fancybox="certificates"
+                data-caption="ICPC Asia Dhaka Regional Contest 2023 (Volunteer)"
+              >
+                <img
+                  src="img/certificates/ICPC.jpeg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="ICPC Volunteer Certificate"
+                />
+              </a>
+              <div class="text-center mt-2">
+                <h6 class="fw-semibold mb-1">
+                  ICPC Asia Dhaka Regional (Volunteer)
+                </h6>
+                <a
+                  class="text-primary small"
+                  href="https://icpc.bubt.edu.bd/2023/volunteers.php"
+                  target="_blank"
+                  >Event coordination & technical support</a
+                >
+              </div>
+            </div>
+            <!-- Agile Project Management Foundation -->
+            <div class="col-6 col-md-4 col-lg-4">
+              <a
+                href="img/certificates/agile-project-management.png"
+                data-fancybox="certificates"
+                data-caption="Agile Project Management Foundation"
+              >
+                <img
+                  src="img/certificates/agile-project-management.png"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Agile Project Management"
+                />
+              </a>
+              <div class="text-center mt-2">
+                <h6 class="fw-semibold mb-1">Agile Project Management</h6>
+                <a
+                  href="https://www.life-global.org/certificate/656bfc85-9a30-4b78-a054-096a1bb5441b"
+                  target="_blank"
+                  class="text-primary small"
+                  >Verify Certificate</a
+                >
+              </div>
+            </div>
+            <!-- WordPress for Absolute Beginners -->
+            <div class="col-6 col-md-4 col-lg-4">
+              <a
+                href="img/certificates/wordpress.jpg"
+                data-fancybox="certificates"
+                data-caption="WordPress for Absolute Beginners"
+              >
+                <img
+                  src="img/certificates/wordpress.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="WordPress Beginners Certificate"
+                />
+              </a>
+              <div class="text-center mt-2">
+                <h6 class="fw-semibold mb-1">WordPress for Beginners</h6>
+                <a
+                  href="https://www.udemy.com/certificate/UC-b4f65fc1-e332-464b-b97b-ffab598c354c/"
+                  target="_blank"
+                  class="text-primary small"
+                  >Verify Certificate</a
+                >
+              </div>
+            </div>
+            <!-- HackerRank Problem Solving (Basic) -->
+            <div class="col-6 col-md-4 col-lg-4">
+              <a
+                href="img/certificates/hackerrank-problem.png"
+                data-fancybox="certificates"
+                data-caption="HackerRank Problem Solving (Basic)"
+              >
+                <img
+                  src="img/certificates/hackerrank-problem.png"
+                  class="img-fluid rounded shadow-sm"
+                  alt="HackerRank Problem Solving"
+                />
+              </a>
+              <div class="text-center mt-2">
+                <h6 class="fw-semibold mb-1">Problem Solving (Basic)</h6>
+                <a
+                  href="https://www.hackerrank.com/certificates/cf9f979ecd28"
+                  target="_blank"
+                  class="text-primary small"
+                  >Verify Certificate</a
+                >
+              </div>
+            </div>
+            <!-- Internet and Web Development Fundamentals -->
+            <div class="col-6 col-md-4 col-lg-4">
+              <a
+                href="img/certificates/web-fundamentals.jpg"
+                data-fancybox="certificates"
+                data-caption="Internet and Web Development Fundamentals"
+              >
+                <img
+                  src="img/certificates/web-fundamentals.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Web Development Fundamentals"
+                />
+              </a>
+              <div class="text-center mt-2">
+                <h6 class="fw-semibold mb-1">Web Development Fundamentals</h6>
+                <a
+                  href="https://www.udemy.com/certificate/UC-49ddc24b-03f0-4bd2-a1b5-c0ee9c6ff877/"
+                  target="_blank"
+                  class="text-primary small"
+                  >Verify Certificate</a
+                >
+              </div>
+            </div>
+            <!-- HackerRank CSS Skills Verification -->
+            <div class="col-6 col-md-4 col-lg-4">
+              <a
+                href="img/certificates/css-verification.png"
+                data-fancybox="certificates"
+                data-caption="HackerRank CSS Skills Verification"
+              >
+                <img
+                  src="img/certificates/css-verification.png"
+                  class="img-fluid rounded shadow-sm"
+                  alt="CSS Skills Verification"
+                />
+              </a>
+              <div class="text-center mt-2">
+                <h6 class="fw-semibold mb-1">CSS Skills Verification</h6>
+                <a
+                  href="https://www.hackerrank.com/certificates/5ab788d23c44"
+                  target="_blank"
+                  class="text-primary small"
+                  >Verify Certificate</a
+                >
+              </div>
+            </div>
+            <!-- AWS Cloud Day 2023 -->
+            <div class="col-6 col-md-4 col-lg-4">
+              <a
+                href="img/certificates/AWS Cloud Day 2023.jpg"
+                data-fancybox="certificates"
+                data-caption="AWS Cloud Day 2023"
+              >
+                <img
+                  src="img/certificates/AWS Cloud Day 2023.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="AWS Cloud Day 2023"
+                />
+              </a>
+              <div class="text-center mt-2">
+                <h6 class="fw-semibold mb-1">AWS Cloud Day 2023</h6>
+                <span class="text-muted small"
+                  >Insights into AWS & cloud deployment</span
+                >
+              </div>
+            </div>
+            <!-- Initiative to Make Networking and ICT More Attractive to Students -->
+            <div class="col-6 col-md-4 col-lg-4">
+              <a
+                href="img/certificates/Initiative to Make Networking and ICT More Attractive to Students.jpg"
+                data-fancybox="certificates"
+                data-caption="Initiative to Make Networking and ICT More Attractive to Students"
+              >
+                <img
+                  src="img/certificates/Initiative to Make Networking and ICT More Attractive to Students.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Networking and ICT Event"
+                />
+              </a>
+              <div class="text-center mt-2">
+                <h6 class="fw-semibold mb-1">Networking & ICT Initiative</h6>
+                <span class="text-muted small"
+                  >Participation in ICT outreach event</span
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       <!-- Languages & Interests -->
       <section class="section additional-section">
         <div class="container">
@@ -882,6 +889,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
     <script src="script.js"></script>
     <script>
       $(document).ready(function () {
