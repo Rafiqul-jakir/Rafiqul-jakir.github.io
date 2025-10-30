@@ -106,7 +106,7 @@ a:hover {
 
 .slide-in-right {
   opacity: 0;
-  transform: translateX(50px);
+  transform: translateX(0px);
   transition: all 0.8s ease;
 }
 
